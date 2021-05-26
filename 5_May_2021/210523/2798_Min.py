@@ -24,3 +24,11 @@ for i in range(len(sumList2)):
     if (int(sumList2[i]) > M):
         print(sumList2[i-1])
         break   
+
+for i in range(N-2): # nCr 고르기 다중포문으로 고르는 법도 알아두시면 좋아요
+    for j in range(i+1,N-1):
+        for k in range(j+1,N):
+            mx = max(mx, (numberList[i]+numberList[j]+numberList[k] if numberList[i]+numberList[j]+numberList[k]<=M else 0))
+print(mx)
+
+# https://www.acmicpc.net/problem/3040 이문제 좋아요 추천
