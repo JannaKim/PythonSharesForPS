@@ -32,3 +32,4 @@ for i in range(N-2): # nCr 고르기 다중포문으로 고르는 법도 알아�
 print(mx)
 
 # https://www.acmicpc.net/problem/3040 이문제 좋아요 추천
+#민재님 최고 !!!감사합니다아앙 ㅎㅎㅎ
