@@ -12,26 +12,12 @@ for i in range(2 * n - 1):
     for j in range(2 * n -1):
         if abs(x - i) + abs(y - j) < n:
             paper[j][i] = '*'
-        
-'''
-for i in range(n):
-    for j in range(2*n-1):
-        if paper[i][j] == '*':
-'''
-flag = False
-for i in range(2 * n - 1):
-    for j in range(2 * n -1):
-        if (paper[j][i-1] == '*' and paper[j][i] == ' '):
-            flag = True
-        
-        else:
-            flag = False
 
-if flag == True:
-    for i in range(2 * n -1):
-        for j in range(2 * n - 1):
+for i in range(n, 2 * n -1):
+    for j in range( 2 * n - 1):
+        if abs(x - i) + abs(y - j) >= n:
             paper[j][i] = ''
+
 
 for el in paper:
     print(*el, sep='')
-
