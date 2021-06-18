@@ -5,9 +5,9 @@ n = int(input())
 def recursion(n, cnt):
     if not n:
         return
-    print("***" * cnt)
-    print("* *" * cnt)
-    print("***" * cnt)
+    print("***" * cnt * 3)
+    print("* *" * cnt * 3)
+    print("***" * cnt * 3)
 
     recursion(n - 1, cnt + 3)
 
